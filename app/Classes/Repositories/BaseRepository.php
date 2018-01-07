@@ -3,22 +3,19 @@
  * Created by PhpStorm.
  * User: Marky
  * Date: 04/01/2018
- * Time: 00:13
+ * Time: 00:13.
  */
 
 namespace App\Classes\Repositories;
 
-use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Collection;
+use Illuminate\Database\Eloquent\Builder;
 
 /**
- * Class BaseRepository
- *
- * @package App\Classes\Repositories
+ * Class BaseRepository.
  */
 class BaseRepository
 {
-
     /**
      * @var Builder|Collection
      */
@@ -40,5 +37,4 @@ class BaseRepository
     {
         return $this->model->where('id', $integer)->first();
     }
-
 }

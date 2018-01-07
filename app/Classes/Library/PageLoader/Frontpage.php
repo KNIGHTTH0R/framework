@@ -53,8 +53,7 @@ class Frontpage
      */
     public function publish(string $template = null, bool $override = true, int $status = 200, bool $errorResponse = false)
     {
-        if (!$errorResponse)
-        {
+        if (! $errorResponse) {
             if ($this->isMaintenanceMode()) {
                 return ErrorController::maintenance();
             }

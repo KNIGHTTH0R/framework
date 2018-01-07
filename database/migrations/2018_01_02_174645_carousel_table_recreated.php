@@ -17,8 +17,7 @@ class CarouselTableRecreated extends Migration
 
         Schema::drop('carousel_slides');
 
-        Schema::create('carousels', function(Blueprint $table)
-        {
+        Schema::create('carousels', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->integer('page_id');
@@ -30,8 +29,7 @@ class CarouselTableRecreated extends Migration
             $table->timestamps();
         });
 
-        Schema::create('carousel_slides', function(Blueprint $table)
-        {
+        Schema::create('carousel_slides', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
             $table->string('description')->nullable();

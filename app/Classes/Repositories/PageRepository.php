@@ -9,9 +9,8 @@
 namespace App\Classes\Repositories;
 
 use App\Model\Page;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
+use Illuminate\Database\Eloquent\Builder;
 
 /**
  * Class PageRepository.
@@ -20,7 +19,6 @@ use Illuminate\Support\Collection;
  */
 class PageRepository extends BaseRepository
 {
-
     /**
      * @var Page|Builder|Collection
      */

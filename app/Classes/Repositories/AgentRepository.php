@@ -9,8 +9,8 @@
 namespace App\Classes\Repositories;
 
 use App\Model\Agent;
-use Doctrine\Common\Collections\Collection;
 use Illuminate\Database\Eloquent\Builder;
+use Doctrine\Common\Collections\Collection;
 
 /**
  * Class AgentRepository.

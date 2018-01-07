@@ -52,7 +52,7 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
-        if (app()->isLocal() && !anInstanceOf(NotFoundHttpException::class)) {
+        if (app()->isLocal() && ! anInstanceOf(NotFoundHttpException::class)) {
             return parent::render($request, $exception);
         }
 

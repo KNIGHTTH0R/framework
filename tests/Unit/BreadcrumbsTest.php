@@ -3,24 +3,20 @@
  * Created by PhpStorm.
  * User: Marky
  * Date: 04/01/2018
- * Time: 01:33
+ * Time: 01:33.
  */
 
 namespace Tests\Unit;
 
-use App\Classes\Breadcrumbs;
-use Illuminate\Foundation\Testing\WithFaker;
-use Illuminate\Support\Facades\Route;
 use Tests\TestCase;
+use App\Classes\Breadcrumbs;
+use Illuminate\Support\Facades\Route;
 
 /**
- * Class BreadcrumbsTest
- *
- * @package Tests\Unit
+ * Class BreadcrumbsTest.
  */
 class BreadcrumbsTest extends TestCase
 {
-
     public function testAddCrumb()
     {
         /** @var Breadcrumbs $breadcrumbs */

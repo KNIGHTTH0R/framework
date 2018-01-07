@@ -9,15 +9,14 @@
 namespace App\Classes\Repositories;
 
 use App\Model\Account;
-use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Collection;
+use Illuminate\Database\Eloquent\Builder;
 
 /**
  * Class AccountRepository.
  */
 class AccountRepository extends BaseRepository
 {
-
     /**
      * @var Account|Builder|Collection
      */
